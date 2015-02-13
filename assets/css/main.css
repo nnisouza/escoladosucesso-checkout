@@ -84,6 +84,9 @@ textarea {
     position: relative;
     margin: 0 auto;
 }
+.pws_tabs_list{
+    box-shadow: 0 -2px 7px -1px rgba(0,0,0,0.22);
+}
 .wrapper .header{
     padding-bottom: 20px;
 }
@@ -112,10 +115,14 @@ textarea {
     margin: 10px 0;
 }
 .wrapper .content h2{
-    text-align: center;
-    font-size: 18px;
-    color: #696969;
-    font-weight: 400;
+    text-align: left;
+    font-size: 22px;
+    color: rgb(105, 105, 105);
+    font-weight: 600;
+    border-left: 5px solid #1abc9c;
+    line-height: 40px;
+    padding-left: 15px;
+    text-transform: uppercase;
 }
 
 .wrapper .footer .copyrights{
