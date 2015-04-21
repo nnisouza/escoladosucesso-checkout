@@ -11,8 +11,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="assets/css/normalize.min.css">
-        <link rel="stylesheet" href="assets/css/tabs.css">
         <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
 
         <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -33,12 +33,80 @@
                 </div>
             </div>
             <div class="content">
-                <div class="hello_world">
-                    <div data-pws-tab="anynameyouwant1" data-pws-tab-name="Tab Title 1">Our first tab</div>
-                    <div data-pws-tab="anynameyouwant2" data-pws-tab-name="Tab Title 2">Our second tab</div>
-                    <div data-pws-tab="anynameyouwant3" data-pws-tab-name="Tab Title 3">Our third tab</div>
-                </div>
-                
+               <div class="box clearfix">
+                   <div class="header">
+                       <ul class="clearfix">
+                           <li class="active"><span>Informações Pessoais</span></li>
+                           <li><span>Detalhes da Compra</span></li>
+                           <li><span>Confirmação</span></li>
+                       </ul>
+                   </div>
+                   <div class="boxContent">
+                       <div class="pan panzer1">
+                           <div class="half">
+                               <h3>Faça login para continuar</h3>
+                               <form action="" id="loginForm">
+                                   <label for="email1">E-mail</label>
+                                   <input type="text" name="email1"/>
+                                   <label for="senha1">Senha</label>
+                                   <input type="text" name="senha1"/>
+                                   <button type="submit">Enviar</button>
+                               </form>
+                           </div>
+                           <div class="half right">
+                               <div class="cadCall">
+                                   <p>
+                                       Não possui conta?<br/>
+                                       <span id="calltoAction">Cadastre-se!</span>
+                                   </p>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="clearfix"></div>
+                       <div class="pan panzer2 hidden">
+                           <h3>Cadastro</h3>
+                           <form action="" id="cadastroForm">
+                               <div class="clearfix">
+                                   <div class="half">
+                                       <label for="">Nome</label>
+                                       <input type="text">
+                                   </div>
+                                   <div class="half">
+                                       <label for="">Sobrenome</label>
+                                       <input type="text">
+                                   </div>
+                               </div>
+                               <div class="clearfix">
+                                   <div class="half">
+                                       <label for="">E-mail</label>
+                                       <input type="text">
+                                   </div>
+                                   <div class="half">
+                                       <label for="">Estado</label>
+                                       <input type="text">
+                                   </div>
+                               </div>
+                               <div class="clearfix">
+                                   <div class="half">
+                                       <label for="">Senha</label>
+                                       <input type="password">
+                                   </div>
+                                   <div class="half">
+                                       <label for="">Repetir Senha</label>
+                                       <input type="password">
+                                   </div>
+                               </div>
+                               <div class="clearfix">
+                                   <div class="half right">
+                                       <button type="submit">
+                                           Salvar
+                                       </button>
+                                   </div>
+                               </div>
+                           </form>
+                       </div>
+                   </div>
+               </div>
             </div>
             <div class="footer">
                 <p class="copyrights">

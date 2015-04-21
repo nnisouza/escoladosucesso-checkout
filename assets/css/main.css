@@ -78,15 +78,7 @@ textarea {
     background: url('../img/bg.jpg') center center;
     background-size: cover;
 }
-.wrapper .content{
-    width: 750px;
-    height: auto;
-    position: relative;
-    margin: 0 auto;
-}
-.pws_tabs_list{
-    box-shadow: 0 -2px 7px -1px rgba(0,0,0,0.22);
-}
+
 .wrapper .header{
     padding-bottom: 20px;
 }
@@ -145,17 +137,171 @@ textarea {
 .wrapper .footer .copyrights a:hover{
     color: #1abc9c;
 }
+.box {
+    background: #fff;
+    box-shadow: 0 -2px 7px -1px rgba(0,0,0,0.22);
+    box-sizing: border-box;
+    width: 750px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: hidden;
+}
+.box .header{
+    background: #1abdb4;
+    height: 40px;
+    width: 100%;
+    margin: 0 0 30px;
+    padding: 0;
+}
+.box .header ul{
+    margin: 0;
+    padding: 0;
+}
+.box .header ul li{
+    float: left;
+    width: 33%;
+    color: #fff;
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    list-style: none;
+    font-weight: 500;
+    position: relative;
+}
+.box .header ul li span{
+    position: relative;
+    z-index: 5;
+}
+.box .header ul li.active:after{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #1abdb4;
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    z-index: 0;
+    -webkit-transform: rotate(45deg) translateX(-50%);
+    -moz-transform: rotate(45deg) translateX(-50%);
+    -ms-transform: rotate(45deg) translateX(-50%);
+    -o-transform: rotate(45deg) translateX(-50%);
+    transform: rotate(45deg) translateX(-50%);
+}
+.box .boxContent{
+    height: 280px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: relative;
+    width: 100%;
+}
+.box .half{
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+    display: table;
+}
+.box .half.right{
+    float: right;
+}
+.box .half.right:before{
+    content: '';
+    display: block;
+    height: 280px;
+    width: 0;
+    border-left: 1px solid #73d3ce;
+    border-right: 1px solid #a4ece8;
+    position: absolute;
+    left: -1px;
+    top: 0;
+}
+
+.box .half.right .cadCall{
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+}
+.box .half.right .cadCall p{
+    margin: 0;
+    font-size: 18px;
+    color: #1abdb4;
+    text-align: center;
+    font-weight: 600;
+}
+.box .half.right .cadCall p span{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+h3{
+    color: #1abdb4;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0 0 15px;
+    text-align: center;
+}
+label{
+    color: #1abdb4;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+input{
+    border: 2px solid #a4ece8;
+    height: 35px;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding: 0 10px
+}
+button{
+    border: 0 none;
+    border-radius: 5px;
+    background: #1abdb4;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: block;
+    height: 35px;
+    width: 170px;
+}
+.boxContent img{
+    width: 100px;
+    height: 100px;
+}
+
+#loginForm{
+    padding: 0 30px;
+}
+#loginForm button{
+    margin: 0 auto;
+}
 
 
 
 
-
-
-
-
-
-
-
+.pan{
+    position: absolute;
+    top: 0;
+}
+.panzer2{
+    width: 100%;
+}
+.panzer2 h3{
+    font-size: 20px;
+    text-align: left;
+    padding-left: 20px;
+}
+.panzer2 .half{
+    padding: 0 20px;
+}
+.panzer2 .half.right:before{display: none;}
+.panzer2 .half.right button{float: right}
 
 /* ==========================================================================
    Media Queries

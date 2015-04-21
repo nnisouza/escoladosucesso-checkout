@@ -14,7 +14,11 @@ function actions() {
     cheet('s h a k e s p e a r e', function () {
       alert('Doubt thou the stars are fire; \nDoubt that the sun doth move; \nDoubt truth to be a liar; \nBut never doubt I love. \n                                                        - William Shakespeare');
     });
-    $('.hello_world').pwstabs();  
+    $('#calltoAction').click(function() {
+        $('.panzer1').addClass('animated fadeOutRight');
+        $('.panzer2').removeClass('hidden');
+        $('.panzer2').addClass('animated fadeInLeft');
+    });
 }
 function afterLoaded() {
     $('.wrapper').fadeIn('slow');
