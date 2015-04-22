@@ -9,6 +9,7 @@ function calc() {
 }
 function drawPage() {
     
+
 }
 function actions() {
     cheet('s h a k e s p e a r e', function () {
@@ -19,6 +20,7 @@ function actions() {
         $('.panzer2').removeClass('hidden');
         $('.panzer2').addClass('animated fadeInLeft');
     });
+    $('.holdingPrice div').fitText();
 }
 function afterLoaded() {
     $('.wrapper').fadeIn('slow');
